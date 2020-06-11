@@ -27,6 +27,7 @@ body{
 
 /* header style */
 #header{
+    overflow: hidden;
     width: 100%;
     padding: 10px 0;
     border-bottom: 1px solid #1b2838;
@@ -42,10 +43,10 @@ body{
     margin: auto;
 }
 #header .sub{
-    display: none;
+    height: 0;
 }
 #header .sub.on{
-    display: block;
+    height: 166px;
 }
 .logo{
     width: 300px;
@@ -55,11 +56,11 @@ body{
 }
 .top_nav{
     display: flex;
-    padding: 0 8px;
 }
 .gnb{
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 700px;
 }
 .gnb li{
@@ -74,12 +75,45 @@ body{
 }
 .ranking_box{
     height: 62px;
+    margin-left: auto;
 }
-.rank_view .more{
+.ranking_roll{
+    overflow: hidden;
     width: 100%;
-    padding: 16px;
+    margin-top: -10px;
+    background: #1b2838;
     color: #fff;
-    border: 1px solid #ff6e61;
+}
+.ranking_roll:hover{
+    overflow: visible;
+}
+.ranking_roll .top3{
+    display: block;
+    color: #ffee01;
+    animation-name: lightning;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+@keyframes lightning{
+    0% {color: #ffee01;}
+    50% {color: #fff;}
+    100% {color: #ffee01;}
+}
+.ranking_roll ul li{
+    display: flex;
+    height: 62px;
+    padding: 10px;
+    background: #1b2838;
+    border-bottom: 1px solid #444;
+    align-items: center;
+}
+.ranking_roll ul li img{
+    width: 46px;
+    margin: 0 8px;
+}
+.ranking_roll ul li img.col_card{
+    width: 30px;
 }
 .ranking{
     background: #1b2838;
@@ -94,22 +128,17 @@ body{
 .ranking a:hover{
     color: #ccc;
 }
-.rank_view{
-    display: none;
-    position: absolute;
-    right: 0;
-    z-index: 20;
-}
-.rank_view.on{
-    display: block;
-}
 .sub_menu{
-    margin-left: 342px;
+    margin: auto;
     width: 700px;
     display: flex;
 }
 .sub_menu ul{
     flex: 1;
+}
+.sub_menu ul:first-child{
+    margin-left: -20px;
+    margin-right: 20px;
 }
 .sub_menu ul li{
     margin: 12px 0;
@@ -164,21 +193,24 @@ body{
 }
 .left_bnr h3{
     font-size: 40px;
-    padding-bottom: 40px;
+    padding: 16px 0 40px;
 }
 .card_no1{
     margin-left: auto;
     margin-right: 100px;
 }
+.ranking_top p{
+    line-height: 24px;
+}
 .card_no1 img{
     width: 160px;
 }
 .right_bnr{ 
+    width: 20%;
     margin: 60px 0 60px 60px; 
     margin-left: auto;
 }
 .benefit_box{
-    overflow: hidden;
     height: 66px;
     margin: 20px 0 40px;
 }
@@ -384,8 +416,25 @@ body{
     #header .inner, #footer .inner{
         width: 100%;
     }
+    .logo,.m_gnb img{
+        padding: 0 8px;
+    }
     .gnb{
         margin-left: auto;
+    }
+    .sub_menu {
+        position: absolute;
+        left: 36%;
+        top: 0;
+    }
+    .sub_menu ul:first-child{
+        margin: 0;
+    }
+    .sub_menu ul {
+        padding-right: 46px;
+    }
+    .ranking_roll{
+        display: none;
     }
     #footer .inner{
         display: flex;
@@ -416,9 +465,9 @@ body{
 }
 
 @media (max-width: 1024px){
-    /* .top_nav{
-        padding: 0;
-    } */
+    #header {
+        overflow: visible;
+    }
     .gnb{
         display: none;
     }
@@ -428,8 +477,14 @@ body{
         margin-left: auto;
         align-items: center;    
     }
+    .sub_menu {
+        padding-left: 348px;
+    }
+    #header .sub{
+        display: none;
+    }
     .m_gnb_lst{
-        display: flex;
+        overflow: auto;
         display: none;
         flex-direction: column;
         justify-content: center;
@@ -441,6 +496,10 @@ body{
         background: #fff;
         width: 100vw;
         height: 100vh;
+        margin-top: -10px;
+    }
+    .m_gnb_lst.active{
+        display: block;
     }
     .m_gnb_lst > ul{
         font-size: 20px;
@@ -460,16 +519,29 @@ body{
         font-size: 16px;
         background: #eee;       
     }
+    .m_gnb_lst > ul li:hover > a{
+        font-weight: bold;
+        color: #ff6e61;
+    }
     .m_gnb_lst > ul li:hover ul{
         display: block;
     }
     .close_btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 8px;
+        margin-top: 20px;
+        margin-left: auto;
         width: 60px;
         height: 60px;
         border: 1px solid #ccc;
         border-radius: 50%;
         background: #fff;
-        margin: auto;
+    }
+    .close_btn:hover{
+        background: #1b2838;
+        color: #fff;
     }
     .visual .inner{
         flex-direction: column;

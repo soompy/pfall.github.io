@@ -8,10 +8,11 @@
   <link rel="stylesheet" href="css/card/index.css">
   <link rel="stylesheet" href="css/card/reset.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <script src="js/gorilla.js"></script>
 </head>
 
-<header id="header">
+<header id="header" onmouseover="showSub()" onmouseout="hideSub(this)">
   <div class="inner">
     <div class="top_nav">
       <h1 class="logo">
@@ -25,45 +26,18 @@
         <li><a href="#">프로모션</a></li>
       </ul>
       <section class="ranking_box">
-        <div class="rank_view">        
-          <ul class="ranking">
-            <li>
-              <a href="#">
-                <strong class="primary">1</strong>
-                <span class="ml8">현대카드ZERO</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <strong class="primary">2</strong>
-                <span class="ml8">신한카드Mr.Life</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <strong class="primary">3</strong>
-                <span class="ml8">삼성카드 TapTap O</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <strong class="primary">4</strong>
-                <span class="ml8">신한카드 Deep Dream</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <strong class="primary">5</strong>
-                <span class="ml8">청춘대로 톡톡카드</span>
-              </a>
-            </li>         
+        <div class="ranking_roll">
+          <ul>
+            <li><strong class="top3">이달의 카드 순위 TOP2!!</strong></li>
+            <li><strong class="primary">1</strong><img src="./images/ranking_card.png" alt="카드순위">신한카드Mr.Life</li>
+            <li><strong class="primary">2</strong><img src="./images/ranking_card2.png" class="col_card" alt="카드순위">현대카드ZERO</li>
           </ul>
-          <button type="button" class="more bgPrimary">랭킹 100 더보기</button>
         </div>
       </section>
       <div class="m_gnb">
-        <a href="#"><img src="./images/gnb.png" alt="모바일 메뉴"></a>
-        <section class="m_gnb_lst">          
+        <a href="#" onclick="mMenu()"><img src="./images/gnb.png" alt="모바일 메뉴"></a>
+        <section id="m_box" class="m_gnb_lst">  
+          <button type="button" onclick="Close()" class="close_btn">close</button>        
           <ul>
             <li><a href="#">고릴라차트</a>
               <ul>
@@ -92,13 +66,12 @@
             </li>
             <li><a href="#">콘텐츠</a></li>
             <li><a href="#">프로모션</a></li>
-          </ul>
-          <button type="button" class="close_btn">close</button>
+          </ul>          
         </section>
       </div>
     </div>    
   </div>
-  <div class="inner sub">
+  <div class="inner sub" id="subMenu">
     <nav class="sub_menu">
       <ul>
         <li><a href="#">고릴라TOP100</a></li>
@@ -388,12 +361,25 @@
     </div>
   </footer>
 
-
- 
 <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
+<script>
+ var myIndex = 0;
+ carousel();
 
+function carousel() {
+  var i;
+  var bnr = document.getElementsByClassName("benefit");
+  for (i = 0; i < bnr.length; i++) {
+    bnr[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > bnr.length) {myIndex = 1}    
+  bnr[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000);    
+}
+</script>
 </body>
 </html>
