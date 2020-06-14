@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <link rel="stylesheet" href="css/coke/index.css">
+  <link rel="stylesheet" href="css/coke/layout.css">
+  <link rel="stylesheet" href="css/card/reset.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/jquery-3.5.1.js"></script>
+  <script src="js/ui.js"></script>  
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+  <title>CokePlay 자판기</title>
+</head>
+
+<body>
+
+  <div class="wrap bev_machine">
+    <header id="header">
+      <div class="left">
+        <h1><a href="index.html"><img src="./images/coke_logo.png" alt="코카콜라 로고"></a></h1>
+      </div>
+      <div class="right">
+        <button class="menu" onclick="menuOpen()">
+          <img src="./images/bars-solid.svg" alt="메뉴버튼">
+        </button>
+      </div>
+    </header>
+    
+    <div class="inner">
+        <div class="machine">
+          <ul class="bev">
+            <li>
+              <a href="#" class="buy" onclick="buyPopToreta()">
+                <p><strong>토레타</strong>바로 구입하기 &#10148;</p>
+                <span><img src="./images/toreta.png" alt="토레타"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="buy" onclick="buyPopGeorgia()">
+                <p><strong>조지아</strong>바로 구입하기 &#10148;</p>
+                <span><img src="./images/georgia.jpg" alt="조지아"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="buy" onclick="buyPopCgram()">
+                <p><strong>씨그램</strong>바로 구입하기 &#10148;</p>
+                <span><img src="./images/cgram.png" alt="씨그램"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="buy" onclick="buyPopCoke()">
+                <p><strong>코카-콜라</strong>바로 구입하기 &#10148;</p>
+                <span><img src="./images/coke.png" alt="코카콜라"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="buy" onclick="buyPopSprite()">
+                <p><strong>스프라이트</strong>바로 구입하기 &#10148;</p>
+                <span><img src="./images/sprite.png" alt="스프라이트"></span>
+              </a>
+            </li>            
+            <li>
+              <a href="#" class="buy" onclick="buyPopZero()">
+                <p><strong>코카-콜라제로</strong>바로 구입하기 &#10148;</p>
+                <span><img src="./images/zero.png" alt="코카콜라제로"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="buy" onclick="buyPopFanta()">
+                <p><strong>환타</strong>바로 구입하기 &#10148;</p>
+                <span><img src="./images/fanta.png" alt="환타"></span>
+              </a>
+            </li>
+          </ul>
+        </div>  
+        
+        <div id="buyPopToreta" class="dim-layer buyWindow">
+          <span id="dimBg1" class="dim">-</span>
+          <div class="popup">
+            <div class="inner">
+              <h4>수량선택</h4>
+              <div class="cost">
+                <span class="product"><img src="./images/pop_toreta.png" alt="토레타"></span>
+                <p>토레타 250ml<strong>2,400원</strong></p>
+                <div class="counter">
+                  <button type="button" id="minusBtn" class="minus">&#x002D;</button>
+                  <span id="counter_box" class="counting">0</span>
+                  <button type="button" id="plusBtn" class="plus">&#x002B;</button>
+                </div>
+              </div>
+              <div class="btn">
+                <button type="button">담기</button>
+                <button type="button">선물</button>
+                <button type="button" class="primary choice">구매</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="buyPopGeorgia" class="dim-layer buyWindow">
+          <span id="dimBg2" class="dim">-</span>
+          <div class="popup">
+            <div class="inner">
+              <h4>수량선택</h4>
+              <div class="cost">
+                <span class="product"><img src="./images/pop_georgia.png" alt="조지아"></span>
+                <p>조지아 180ml<strong>1,700원</strong></p>
+                <div class="counter">
+                  <button type="button" class="minus">&#x002D;</button>
+                  <span id="counter_box" class="counting">0</span>
+                  <button type="button" class="plus">&#x002B;</button>
+                </div>
+              </div>
+              <div class="btn">
+                <button type="button">담기</button>
+                <button type="button">선물</button>
+                <button type="button" class="primary choice">구매</button>
+              </div>
+            </div>
+          </div>      
+        </div>
+
+        <div id="buyPopCgram" class="dim-layer buyWindow">
+          <span id="dimBg3" class="dim">-</span>
+          <div class="popup">
+            <div class="inner">
+              <h4>수량선택</h4>
+              <div class="cost">
+                <span class="product"><img src="./images/pop_cgram.png" alt="씨그램"></span>
+                <p>씨그램 250ml<strong>2,600원</strong></p>
+                <div class="counter">
+                  <button type="button" class="minus">&#x002D;</button>
+                  <span id="counter_box" class="counting">0</span>
+                  <button type="button" class="plus">&#x002B;</button>
+                </div>
+              </div>
+              <div class="btn">
+                <button type="button">담기</button>
+                <button type="button">선물</button>
+                <button type="button" class="primary choice">구매</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="buyCoke" class="dim-layer buyWindow">
+          <span id="dimBg4" class="dim">-</span>
+          <div class="popup">
+            <div class="inner">
+              <h4>수량선택</h4>
+              <div class="cost">
+                <span class="product"><img src="./images/pop_coke.png" alt="코카콜라"></span>
+                <p>코카-콜라 250ml<strong>1,400원</strong></p>
+                <div class="counter">
+                  <button type="button" class="minus">&#x002D;</button>
+                  <span id="counter_box" class="counting">0</span>
+                  <button type="button" class="plus">&#x002B;</button>
+                </div>
+              </div>
+              <div class="btn">
+                <button type="button">담기</button>
+                <button type="button">선물</button>
+                <button type="button" class="primary choice">구매</button>
+              </div>
+            </div>
+          </div>      
+        </div>
+
+        <div id="buyPopSprite" class="dim-layer buyWindow">
+          <span id="dimBg5" class="dim">-</span>
+          <div class="popup">
+            <div class="inner">
+              <h4>수량선택</h4>
+              <div class="cost">
+                <span class="product"><img src="./images/pop_sprite.png" alt="스프라이트"></span>
+                <p>스프라이트 250ml<strong>1,600원</strong></p>
+                <div class="counter">
+                  <button type="button" class="minus">&#x002D;</button>
+                  <span id="counter_box" class="counting">0</span>
+                  <button type="button" class="plus">&#x002B;</button>
+                </div>
+              </div>
+              <div class="btn">
+                <button type="button">담기</button>
+                <button type="button">선물</button>
+                <button type="button" class="primary choice">구매</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="buyPopZero" class="dim-layer buyWindow">
+          <span id="dimBg6" class="dim">-</span>
+          <div class="popup">
+            <div class="inner">
+              <h4>수량선택</h4>
+              <div class="cost">
+                <span class="product"><img src="./images/pop_zero.png" alt="코카콜라zero"></span>
+                <p>Zero 250ml<strong>1,400원</strong></p>
+                <div class="counter">
+                  <button type="button" class="minus">&#x002D;</button>
+                  <span id="counter_box" class="counting">0</span>
+                  <button type="button" class="plus">&#x002B;</button>
+                </div>
+              </div>
+              <div class="btn">
+                <button type="button">담기</button>
+                <button type="button">선물</button>
+                <button type="button" class="primary choice">구매</button>
+              </div>
+            </div>
+          </div>      
+        </div>
+
+        <div id="buyPopFanta" class="dim-layer buyWindow">
+          <span id="dimBg7" class="dim">-</span>
+          <div class="popup">
+            <div class="inner">
+              <h4>수량선택</h4>
+              <div class="cost">
+                <span class="product"><img src="./images/pop_fanta.png" alt="환타"></span>
+                <p>환타 150ml<strong>1,200원</strong></p>
+                <div class="counter">
+                  <button type="button" class="minus">&#x002D;</button>
+                  <span id="counter_box" class="counting">0</span>
+                  <button type="button" class="plus">&#x002B;</button>
+                </div>
+              </div>
+              <div class="btn">
+                <button type="button">담기</button>
+                <button type="button">선물</button>
+                <button type="button" class="primary choice">구매</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <ul class="gnb">
+      <li><a href="coke_index.html">홈</a></li>
+      <li><a href="coke_store.html">스토어</a></li>
+      <li class="add"><a href="coke_index.html"><img src="./images/center.png" alt=""></a></li>
+      <li><a href="coke_store.html">포인트샵</a></li>
+      <li><a href="coke_machine.html">모바일 자판기</a></li>
+    </ul>
+
+    <div class="side_box" id="slideSlide">
+      <section class="top">
+        <span><a href="coke_index.html"><img src="./images/coke_logo.png" alt="coca cola"></a></span>
+        <span class="set">
+          <a href="#"><img src="./images/cog-solid.svg" alt="설정"></a>
+          <a href="#" id="closeBtn" onclick="closeBtn()"><img src="./images/times-solid.svg" alt="닫기"></a>
+        </span>
+      </section>
+      <section class="user">
+        <div class="mypage">
+          <p><strong>닉네임</strong>님</p>
+          <button type="button">MY</button>
+        </div>
+        <div class="mypage">
+          <ul>
+            <li>
+              <span>쿠폰함</span>
+              <p><strong>0</strong>개</p>
+            </li>
+            <li>
+              <span>포인트</span>
+              <p><strong>0</strong>P</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="service">
+        <div class="service_box">
+          <a href="coke_machine.html">모바일 자판기</a>
+          <a href="coke_store.html">스토어</a>
+          <a href="coke_store.html">포인트샵</a>
+        </div>
+        <div class="service_box">
+          <a href="#">게임</a>
+          <a href="#">카메라</a>
+          <a href="#">비디오</a>
+        </div>
+        <div class="service_box">
+          <a href="#">고객센터</a>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>

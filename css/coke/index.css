@@ -1,0 +1,340 @@
+/* 공통 */
+.wrap{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 100vh;
+    margin: auto;
+    word-break: keep-all;
+    color: #1a1a1a;
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.inner{
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    width: 100%;
+    height: 100%;
+    padding: 20px 16px;
+}
+.m16{
+    margin: 16px 0;
+}
+.slogan{
+    color: #333;
+    line-height: 22px;
+}
+input{
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.next{
+    margin-top: auto;
+    background: #c50707;
+    color: #fff;
+    border: none;
+    padding: 16px 0;
+}
+.primary{
+    background: #c50707;
+}
+.primary_btn{
+    background: #c50707;
+    color: #fff;
+    padding: 16px 0;
+    margin-top: 40px;
+}
+.primary_btn:hover{
+    background: #990014;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+.text-center{
+    text-align: center;
+}
+a{
+    color: #1a1a1a !important;
+}
+a:hover{
+    display: block;
+    text-decoration: none !important;
+}
+.area h3{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+/* 회원가입 */
+.join h2{
+    font-weight: bold;
+    font-size: 24px;
+    margin: 60px 0 30px;
+}
+.login li a{
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    margin: 16px 0;
+    height: 50px;
+}
+.login li p{
+    margin: 0 16px;
+}
+.login li span{margin-left: auto;font-size: 26px;}
+.login li:nth-child(1) a{background: #e0e0e0;margin-top: 30px;}
+.login li:nth-child(2) a{background: #ffee01;}
+.login li:nth-child(3) a{background: #54668e;color: #fff;}
+.login img{
+    width: 30px;
+}
+.join_history{
+    margin-top: auto;
+    font-size: 12px;
+    text-align: center;
+}
+.join_history a,.join_history a:hover{
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+/* 메인 */
+.play{ 
+    position: relative;
+    padding: 12px 0;
+    color: #333;
+    font-family: 'Titillium Web', sans-serif;
+}
+.play .line{
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    margin: 10px 0 0 0;
+    background: #FF1847;
+}
+.play ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+.play ul li{
+    flex: 1;
+    opacity: .4;
+    margin: 0 40px 0 0;
+    transition: all 0.4s ease;
+}
+.play ul li:hover{
+    opacity: .7;
+}
+.play ul li:active{
+    opacity: 1;
+}
+.play ul li:active a{
+    opacity: 1;
+}
+.play ul li:last-child{
+    margin-right: 0;
+}
+.play ul li a{
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    letter-spacing: .1em;
+}
+.play ul li.active{
+    opacity: 1;
+}
+.middle_bnr a{
+    display: block;
+    width: 100%;
+    height: 80px;
+    background: #c50707 url('../../images/coke_fam.png') 100% center no-repeat;
+    background-size: 110px;
+    padding: 22px 12px 12px;
+    color: #fff !important;
+    text-shadow: 1px 1px 4px #444;
+}
+.middle_bnr a:hover{
+    color: #ccc;
+    text-shadow: 1px 1px 2px 4px #444;
+}
+.pointshop{
+    display: flex;
+    font-family: 'Titillium Web', sans-serif;
+    text-transform: uppercase;
+}
+.pointshop li{
+    flex: 1;
+}
+.pointshop li:nth-child(2),.shopping li:nth-child(2){
+    margin: 0 12px;
+}
+.pointshop li a{
+    display: flex;
+    height: 120px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    color: #444;
+    text-decoration: none;
+}
+.pointshop li a img{
+    width: 50%;
+    margin: auto;
+}
+.gnb{
+    display: flex;
+    margin: 0;
+    align-items: center;
+    box-shadow: 0 -1px 10px -6px #666;
+}
+.gnb li{
+    display: flex;
+    flex: 1;
+    height: 56px;
+    padding: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+.gnb li a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.gnb li:hover a{
+    color: #c50707 !important;
+    font-weight: bold;
+}
+.gnb li.add{
+    position: relative;
+}
+.gnb li.add a{
+    position: relative;
+}
+.gnb li.add img{
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: -16px;
+    width: 60px;
+    height: 60px; 
+    margin-left: -30px;
+}
+.gnb li.add a:after{
+    display: block;
+    content: '+';
+    position: absolute;
+    left: 36px;
+    top: -3px;
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+/* 스토어 */
+.shopping{
+    display: flex;
+}
+.shopping li{
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+.shopping li a{
+    display: flex;
+    flex-direction: column;
+}
+.shopping img{
+    width: 30px;
+    margin: auto;
+    margin-bottom: 12px;
+}
+
+/* 자판기 */
+.bev_machine{
+    background: #c50707;
+    color: #fff;
+}
+.machine{
+    overflow-y: scroll;
+    height: 80vh;
+    border: 16px solid #e51937;
+    border-radius: 20px;
+    padding: 16px;
+}
+.bev li a{
+    display: flex;
+    height: 130px;
+    align-items: center;
+    justify-content: center;
+    margin: 14px 0 0 10px;
+    color: #fff !important;
+}
+.bev li p{
+    margin-right: auto;
+    opacity: 0.7;
+}
+.bev li.on p,.bev li:hover p{
+    opacity: 1;
+}
+.bev li strong{
+    display: block;
+    font-size: 14px;
+}
+.bev li.on strong,.bev li:hover strong{
+    font-size: 18px;
+}
+.bev li.on a,.bev li:hover a{
+    font-size: 14px;
+}
+.bev li span{
+    display: flex;
+    width: 110px;
+    height: 110px;
+    border: 6px solid #999;
+    background: #fff;
+    border-radius: 50%;
+    margin: auto;
+    opacity: 0.7;
+}
+.bev li.on span,.bev li:hover span{
+    width: 130px;
+    height: 130px;
+    opacity: 1;
+}
+.bev li img{
+    width: 70px;
+    margin: auto;
+}
+.bev li.on img,.bev li:hover img{
+    width: 91px;
+}
+
+
+
+@media (max-width: 500px){
+    .wrap{
+        width: 100%;
+    }
+    .inner{
+        overflow: scroll;
+    }
+    .gnb li.add a:after{
+        left: 41%;
+    }
+}
+
+@media (max-width: 360px){
+    .gnb li.add a:after{
+        left: 22px;
+    }
+}
