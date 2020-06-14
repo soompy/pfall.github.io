@@ -131,8 +131,131 @@ function closeBtn(){
   document.getElementById('slideSlide').classList.remove('active');
 }
 
+function counter(){
+  var count = 0;
+  var countButton = document.getElementById("plusBtn");
+  var displayCount = document.getElementById("counter_box");
+  var mCount = document.getElementById("minusBtn");
+  countButton.onclick = function(){
+    count++;
+    displayCount.innerHTML = count;
+  }
+  mCount.onclick = function(){
+    count--;
+    if(count < 0){
+      count = 0;
+    }
+    displayCount.innerHTML = count;    
+  }
+}
 
-// 눌렀을ㄸ ㅐ 숫자가 올라가고 내려감
+function counter1(){
+  var count = 0;
+  var countButton = document.getElementById("plusBtn1");
+  var displayCount = document.getElementById("counter_box1");
+  var mCount = document.getElementById("minusBtn1");
+  countButton.onclick = function(){
+    count++;
+    displayCount.innerHTML = count;
+  }
+  mCount.onclick = function(){
+    count--;
+    if(count < 0){
+      count = 0;
+    }
+    displayCount.innerHTML = count;    
+  }
+}
+
+function counter2(){
+  var count = 0;
+  var countButton = document.getElementById("plusBtn2");
+  var displayCount = document.getElementById("counter_box2");
+  var mCount = document.getElementById("minusBtn2");
+  countButton.onclick = function(){
+    count++;
+    displayCount.innerHTML = count;
+  }
+  mCount.onclick = function(){
+    count--;
+    if(count < 0){
+      count = 0;
+    }
+    displayCount.innerHTML = count;    
+  }
+}
+
+function counter3(){
+  var count = 0;
+  var countButton = document.getElementById("plusBtn3");
+  var displayCount = document.getElementById("counter_box3");
+  var mCount = document.getElementById("minusBtn3");
+  countButton.onclick = function(){
+    count++;
+    displayCount.innerHTML = count;
+  }
+  mCount.onclick = function(){
+    count--;
+    if(count < 0){
+      count = 0;
+    }
+    displayCount.innerHTML = count;    
+  }
+}
+
+function counter4(){
+  var count = 0;
+  var countButton = document.getElementById("plusBtn4");
+  var displayCount = document.getElementById("counter_box4");
+  var mCount = document.getElementById("minusBtn4");
+  countButton.onclick = function(){
+    count++;
+    displayCount.innerHTML = count;
+  }
+  mCount.onclick = function(){
+    count--;
+    if(count < 0){
+      count = 0;
+    }
+    displayCount.innerHTML = count;    
+  }
+}
+
+function counter5(){
+  var count = 0;
+  var countButton = document.getElementById("plusBtn5");
+  var displayCount = document.getElementById("counter_box5");
+  var mCount = document.getElementById("minusBtn5");
+  countButton.onclick = function(){
+    count++;
+    displayCount.innerHTML = count;
+  }
+  mCount.onclick = function(){
+    count--;
+    if(count < 0){
+      count = 0;
+    }
+    displayCount.innerHTML = count;    
+  }
+}
+
+function counter6(){
+  var count = 0;
+  var countButton = document.getElementById("plusBtn6");
+  var displayCount = document.getElementById("counter_box6");
+  var mCount = document.getElementById("minusBtn6");
+  countButton.onclick = function(){
+    count++;
+    displayCount.innerHTML = count;
+  }
+  mCount.onclick = function(){
+    count--;
+    if(count < 0){
+      count = 0;
+    }
+    displayCount.innerHTML = count;    
+  }
+}
 
 $(document).ready(function(){
     topNav();
@@ -144,4 +267,11 @@ $(document).ready(function(){
     dimZero();
     dimFanta();
     close();
+    counter();
+    counter1();
+    counter2();
+    counter3();
+    counter4();
+    counter5();
+    counter6();
 })
