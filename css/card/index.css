@@ -457,6 +457,9 @@ body{
         line-height: 24px;    
         margin: auto;
     }
+    #footer .con4 form input{
+        flex: 1 1 auto;
+    }
     .visual .inner{
         width: 100%;
     }
@@ -464,14 +467,14 @@ body{
         width: 100%;
     }
     .left_bnr{
-        flex: 2;
+        flex: 1 1 auto;
         margin: 60px;
     }
     .card_no1{
         margin-right: 0;
     }
     .right_bnr{
-        flex: 1;
+        flex: 1 1 auto;
         margin-right: 60px;
     }
 }
@@ -496,7 +499,6 @@ body{
         display: none;
     }
     .m_gnb_lst{
-        overflow: auto;
         display: none;
         flex-direction: column;
         justify-content: center;
@@ -617,11 +619,14 @@ body{
         padding: 20px;
         margin: 20px;
     }
-    .weekly li:hover {
-        transform: scale(1.01);
-    }
     .weekly {
         flex-direction: column;
+    }
+    .weekly li:hover {
+        transform: scale(1.01);
+    }    
+    .weekly > li,.card_company li{
+        flex: 1 1 auto;
     }
     .card_company{
         flex-direction: column;

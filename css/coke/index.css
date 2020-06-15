@@ -289,6 +289,7 @@ a:hover{
 .bev li p{
     margin-right: auto;
     opacity: 0.7;
+    flex: 1 1 auto;
 }
 .bev li.on p,.bev li:hover p{
     opacity: 1;
@@ -320,6 +321,7 @@ a:hover{
 }
 .bev li img{
     width: 70px;
+    height: 30px;
     margin: auto;
 }
 .bev li.on img,.bev li:hover img{
