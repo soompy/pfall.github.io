@@ -21,6 +21,7 @@
 #header .menu{
     border: none;
     background: transparent;
+    width: 30px;
 }
 #header .menu img{
     width: 20px;
@@ -165,9 +166,10 @@
 .side_box .set a{
     display: inline-block;
     margin: 0 4px;
+    width: 20px;
 }
 .side_box .set img{
-    width: 16px;
+    width: 100%;
 }
 .user{
     color: #1a1a1a;

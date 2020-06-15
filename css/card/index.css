@@ -390,7 +390,7 @@ body{
     margin: 26px auto 80px;
 }
 .con4 form input{
-    flex: 1;
+    flex: 1 1 auto;
     border: 1px solid #ccc;
     padding: 16px 12px;
 }
@@ -499,6 +499,7 @@ body{
         display: none;
     }
     .m_gnb_lst{
+        overflow: auto;
         display: none;
         flex-direction: column;
         justify-content: center;
@@ -509,7 +510,7 @@ body{
         z-index: 20;
         background: #fff;
         width: 100vw;
-        height: 100vh;
+        border-bottom: 1px solid #ccc;
         margin-top: -10px;
     }
     .m_gnb_lst.active{
@@ -626,7 +627,9 @@ body{
         transform: scale(1.01);
     }    
     .weekly > li,.card_company li{
-        flex: 1 1 auto;
+        display: block;
+        flex: none;
+        margin-bottom: 40px;
     }
     .card_company{
         flex-direction: column;
