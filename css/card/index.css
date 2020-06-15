@@ -419,19 +419,31 @@ body{
     .logo,.m_gnb img{
         padding: 0 8px;
     }
-    .gnb{
+    .logo{
+        display: flex;
+        width: 20%;
+        align-items: center;
+    }
+    .gnb{        
+        width: 80%;
+        padding-right: 8px;
         margin-left: auto;
     }
+    .gnb li{
+        flex: 1;
+    }
     .sub_menu {
-        position: absolute;
-        left: 36%;
-        top: 0;
+        display: flex;
+        width: 80%;
+        margin: 0;
+        margin-left: auto;
+    }
+    .sub_menu ul {
+        text-align: center;
+        flex: 1;
     }
     .sub_menu ul:first-child{
         margin: 0;
-    }
-    .sub_menu ul {
-        padding-right: 46px;
     }
     .ranking_roll{
         display: none;
@@ -546,12 +558,6 @@ body{
     .visual .inner{
         flex-direction: column;
     }
-    .left_bnr{
-        flex-direction: column;
-        border: none;
-        padding: 40px 0;
-        margin: 16px;
-    }
     .left_bnr h3 {
         padding: 20px 0;
     }
@@ -578,6 +584,9 @@ body{
 }
 
 @media (max-width: 768px){
+    .left_bnr{
+        flex-direction: column;
+    }
     .m_chart{
         display: none;
     }
@@ -603,6 +612,10 @@ body{
     }
     #footer .inner{
         flex-direction: column;
+    }
+    .left_bnr{
+        padding: 20px;
+        margin: 20px;
     }
     .weekly li:hover {
         transform: scale(1.01);

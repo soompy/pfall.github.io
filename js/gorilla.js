@@ -1,7 +1,3 @@
-$(document).on('click', 'a[href="#"]', function(e){
-    e.preventDefault();
-});
-
 function mMenu(){
     document.getElementById('m_box').className += " active";
 }
