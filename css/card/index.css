@@ -513,6 +513,9 @@ body{
         border-bottom: 1px solid #ccc;
         margin-top: -10px;
     }
+    .logo {
+        width: 220px;
+    }
     .m_gnb_lst.active{
         display: block;
     }
@@ -646,6 +649,9 @@ body{
     }
     .card_company li a img {
         width: 60%;
+    }
+    .con3{
+        padding-top: 0;
     }
 }
 

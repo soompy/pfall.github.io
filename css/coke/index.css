@@ -326,11 +326,6 @@ a:hover{
     height: 30px;
     margin: auto;
 }
-.bev li.on img,.bev li:hover img{
-    width: 91px;
-}
-
-
 
 @media (max-width: 500px){
     .wrap{
