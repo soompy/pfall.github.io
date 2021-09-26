@@ -16,7 +16,7 @@
 <br>
 
 ##### 2021 웹퍼블리싱 작업물은 여기로 와주세요. 
-#####*크롬에 최적화된 반응형 페이지입니다 - 반응형/ html / css / javascript / jQuery <br>
+##### *크롬에 최적화된 반응형 페이지입니다 - 반응형/ html / css / javascript / jQuery <br>
 [JYP 엔터테인먼트 웹퍼블리싱 - 4페이지](https://soompy.github.io/frontendworks21_jyp/) <br>
 [CJ제일제당 웹퍼블리싱 - 1페이지](https://soompy.github.io/frontendworks21_cj/) <br>
 
