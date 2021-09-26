@@ -1,5 +1,5 @@
-# pf20.github.io
-2020년 하반기 포트폴리오(20200610~20200615)
+# 이수민 포트폴리오 모음
+2017 ~ 2021년 작업물 모음(2017.03 ~ 2021.09)
 
 ### SMLEE Works. 🏃‍♀️🏃‍♀️
 웹퍼블리셔 3년 1개월 차 지원자 이수민의 2020년 포트폴리오 작업물 모음 페이지입니다.
@@ -15,15 +15,14 @@
 <br>
 
 ##### 2021 웹퍼블리싱 작업물은 여기로 와주세요. 
-
 <br>
+##### 2021 작업물 페이지입니다. <br>
+*크롬에 최적화된 반응형 페이지입니다 - 반응형/ html / css / javascript / jQuery <br>
+[JYP 엔터테인먼트 웹퍼블리싱 - 4페이지] (https://soompy.github.io/frontendworks21_jyp/) <br>
+[CJ제일제당 웹퍼블리싱 - 1페이지](https://soompy.github.io/frontendworks21_cj/) <br>
 
-2021 작업물 페이지입니다.
-*크롬에 최적화된 반응형 페이지입니다 - 반응형/ html / css / javascript / jQuery
-[JYP 엔터테인먼트 웹퍼블리싱 - 4페이지] (https://soompy.github.io/frontendworks21_jyp/)
-[CJ제일제당 웹퍼블리싱 - 1페이지](https://soompy.github.io/frontendworks21_cj/)
-[Vue 헬스앱 컴포넌트 및 웹퍼블리싱] (https://github.com/soompy/pf20-vue-healthcare)
-
+##### 2021년 Vue를 사용하여 작업한 작업물입니다.
+[Vue 헬스앱 컴포넌트 및 웹퍼블리싱] (https://github.com/soompy/pf20-vue-healthcare) <br>
 <br>
 
 ##### 2020 웹퍼블리싱 작업물 리스트 💪
