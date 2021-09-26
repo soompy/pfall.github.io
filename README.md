@@ -14,7 +14,15 @@
 
 <br>
 
-##### 2017~2019 웹퍼블리싱 작업물은 여기로 와주세요. [2017~2019 작업물 위치입니다.](https://soompy.github.io/pf19.github.io/)
+##### 2021 웹퍼블리싱 작업물은 여기로 와주세요. 
+
+<br>
+
+2021 작업물 페이지입니다.
+*크롬에 최적화된 반응형 페이지입니다 - 반응형/ html / css / javascript / jQuery
+[JYP 엔터테인먼트 웹퍼블리싱 - 4페이지] (https://soompy.github.io/frontendworks21_jyp/)
+[CJ제일제당 웹퍼블리싱 - 1페이지](https://soompy.github.io/frontendworks21_cj/)
+[Vue 헬스앱 컴포넌트 및 웹퍼블리싱] (https://github.com/soompy/pf20-vue-healthcare)
 
 <br>
 
@@ -41,3 +49,6 @@ SPA와 SSR에 대한 이해를 위해 시작한 작업입니다. 앞으로 다�
 [코-크플레이 모바일 웹 마크업 - 스토어](https://soompy.github.io/pf20.github.io/coke_store.html)<br>
 [코-크플레이 모바일 웹 마크업 - 자판기](https://soompy.github.io/pf20.github.io/coke_machine.html)<br>
 반응형 / html / css / javascript / jQuery / photoshop
+
+##### 2017~2019 웹퍼블리싱 작업물은 여기로 와주세요. [2017~2019 작업물 위치입니다.](https://soompy.github.io/pf19.github.io/)
+
